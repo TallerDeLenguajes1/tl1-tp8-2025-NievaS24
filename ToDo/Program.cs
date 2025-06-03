@@ -81,3 +81,28 @@ for (int i = 0; i < tareasRealizadas.Count; i++)
 {
     Console.WriteLine($"\t Tarea {i}: \n\t\t ID: {tareasRealizadas[i].TareaID} \n\t\t Descripcion: {tareasRealizadas[i].Descripcion} \n\t\t Duracion: {tareasRealizadas[i].Duracion}");
 }
+int opcion;
+do
+{
+    Console.WriteLine("Seleccione una opcion:");
+    Console.WriteLine("[1] - Crear tarea/s pendiente/s.");
+    Console.WriteLine("[2] - Marcar tarea/s como realizada/s.");
+    Console.WriteLine("[3] - Buscar tarea/s pendiente/s.");
+    Console.WriteLine("[4] - Mostrar tarea/s.");
+    Console.WriteLine("[0] - Salir");
+    conversionPosible = int.TryParse(Console.ReadLine(), out opcion);
+} while (!conversionPosible || opcion < 0 || opcion > 4);
+while (opcion != 0)
+{
+    //Hacer aca
+    do
+    {
+        Console.WriteLine("Seleccione una opcion:");
+        Console.WriteLine("[1] - Crear tarea/s pendiente/s.");
+        Console.WriteLine("[2] - Marcar tarea/s como realizada/s.");
+        Console.WriteLine("[3] - Buscar tarea/s pendiente/s.");
+        Console.WriteLine("[4] - Mostrar tarea/s.");
+        Console.WriteLine("[0] - Salir");
+        conversionPosible = int.TryParse(Console.ReadLine(), out opcion);
+    } while (!conversionPosible || opcion < 0 || opcion > 4);
+}
