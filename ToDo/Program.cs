@@ -51,4 +51,21 @@ while (decision == 1)
 }
 Console.WriteLine("Si deseas buscar una tarea pendiente por su descripcion presione [1]:");
 int.TryParse(Console.ReadLine(), out decision);
-
+//Busqueda de tareas pendientes por descripcion
+string descripcionBuscada;
+while (decision == 1)
+{
+    Console.WriteLine("Ingrese la descripcion que quiere buscar:");
+    descripcionBuscada = Console.ReadLine();
+    Tarea tareaBuscada = tareasPendientes.Find(tarea => tarea.Descripcion == descripcionBuscada);
+    if (tareaBuscada != null)
+    {
+        Console.WriteLine($"Tarea encontrada: \n ID: {tareaBuscada.TareaID} \n Descripcion: {tareaBuscada.Descripcion} \n Duracion: {tareaBuscada.Duracion}");
+    }
+    else
+    {
+        Console.WriteLine("No se ha encontrado una tarea con esa descripcion.");
+    }
+    Console.WriteLine("Si deseas buscar una tarea pendiente por su descripcion presione [1]:");
+    int.TryParse(Console.ReadLine(), out decision);
+}
