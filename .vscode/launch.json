@@ -10,7 +10,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // Si ha cambiado las plataformas de destino, asegúrese de actualizar la ruta de acceso del programa.
-            "program": "${workspaceFolder}/ToDo/bin/Debug/net7.0/ToDo.dll",
+            "program": "${workspaceFolder}/ToDo/bin/Debug/net8.0/ToDo.dll",
             "args": [],
             "cwd": "${workspaceFolder}/ToDo",
             // Para obtener más información sobre el campo \"consola\", consulte https://aka.ms/VSCode-CS-LaunchJson-Console
